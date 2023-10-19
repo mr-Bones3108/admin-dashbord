@@ -203,14 +203,15 @@ margin-left: 20px;
 }
 .announcement_section{
 grid-column: 2/3;
+margin-left: 40px;
 }
 
 /* card */
 
 .card_section{
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  column-gap: 30px;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  column-gap: 77px;
   row-gap: 22px;
   padding-bottom: 60px;
 }
@@ -251,7 +252,7 @@ grid-column: 2/3;
 }
 .icons{
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   margin-bottom: 20px;
   margin-right: 20px;
   gap: 20px;
