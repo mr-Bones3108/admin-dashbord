@@ -209,11 +209,10 @@ grid-column: 2/3;
 
 .card_section{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-self: start;
-  padding-bottom: 50px;
-  gap: 20px;
-  
+  grid-template-columns: 1fr 2fr;
+  column-gap: 30px;
+  row-gap: 22px;
+  padding-bottom: 60px;
 }
 
 .card {
