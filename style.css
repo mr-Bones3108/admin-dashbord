@@ -19,34 +19,18 @@ body{
     box-sizing: border-box;
   }
 
-
-  
-  .sidebar {
-    background-color: var(--color);
-  }
-  
-
-  .article p {
-    font-size: 18px;
-    font-family: sans-serif;
-    color: white;
-    text-align: left;
-  }
   
   .container{
     display: grid;
     grid-template-columns: 1fr 4fr;
   }
 
-  .navbar{
-    grid-column: 2/3;
-    
-  }
 
+  /* sidebar */
   .sidebar{
+    background-color: var(--color);
     padding-top: 20px;
     grid-row: 1/4;
-    /* width: 350px; */
   }
 
   .menu ul{
@@ -60,17 +44,40 @@ body{
   }
 
   .heading{
+    color: white;
+    padding-left: 20px;
     display: flex;
-    align-items: start;
+    align-items: center;
+    gap: 20px;
+
   }
 
   .more{
-    /* margin-top: 50px; */
     margin-top: -10px;
-    /* margin-top: 10px; */
   }
 
+  .menu li{
+    color: white;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menu li img{
+    height: 2rem;
+  }
+  .heading img{
+    height: 3.6rem;
+  }
+
+  
+
   /* navbar */
+  .navbar{
+    grid-column: 2/3;
+    
+  }
 .navbar{
     display: flex;
    background-color: rgb(255, 255, 255);
