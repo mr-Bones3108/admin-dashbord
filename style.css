@@ -82,7 +82,7 @@ body{
     display: flex;
    background-color: rgb(255, 255, 255);
     flex-direction: column;
-    box-shadow: 0 5px 8px rgb(0, 0, 0);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.151);
     
 }
 
@@ -181,39 +181,29 @@ body{
   align-items: flex-start;
 }
 
-/* heading section */
-.heading_section{
+.main_container {
   display: grid;
   grid-template-columns: 2fr 1fr;
- column-gap: 20px;
+  box-sizing: border-box;
+  background-color: var(--bg-color);
+  column-gap: 50px;
+  padding-top: 20px;;
 }
 
-.heading_section{
- background-color:  var(--bg-color);
-}
-.heading_section p:first-child{
-  margin-top: 20px;
-  margin-left: 20px;
-  font-size: 1.3rem;
-  font-weight: 600;
+.main_container .top_heading{
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
-.heading_section p:last-child{
-  margin-top: 20px;
-  margin-left: 50px;
-  font-size: 1.3rem;
-  font-weight: 600;
-}
+/* heading section */
 
-.heading_section_trend{
-  padding-top: 25px;
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-top: 20px;
-  font-size: 1.3rem;
-  font-weight: 600;
+.project_section{
+grid-column: 1/2;
+margin-left: 20px;
 }
-
+.announcement_section{
+grid-column: 2/3;
+}
 
 /* card */
 
@@ -222,12 +212,12 @@ body{
   grid-template-columns: 1fr 1fr;
   justify-self: start;
   padding-bottom: 50px;
-  background-color: var(--bg-color);
+  gap: 20px;
+  
 }
 
 .card {
-  margin-left: 20px;
-  margin-top: 20px;
+  margin-top: 20px; 
   display: flex;
   background-color: rgb(255, 255, 255);
   width: 380px;
@@ -235,8 +225,7 @@ body{
   border-radius: 10px;
   overflow: hidden;
   gap: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.207); /* Add a box shadow with the desired values */
-  /* justify-self: start; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.207); 
 }
 
 .line{
@@ -279,67 +268,69 @@ body{
   gap: 20px;
 }
 
-/* announcement */
 
 .a_section{
-  display: grid;
-  justify-self: center;
-  grid-template-rows: 1fr 1fr 1fr;
-  width: 300px;
-  height: 375px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  border-radius: 7px;
-  margin-top: 20px;
+display: grid;
+justify-self: center;
+grid-template-rows: 1fr 1fr 1fr;
+width: 300px;
+height: 375px;
+background-color: rgb(255, 255, 255);
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+border-radius: 7px;
+margin-top: 20px;
 }
 
 .sidecard{
-  padding: 20px;
+padding: 20px;
 }
 .sidecard h3{
-  font-size: 1rem;
+font-size: 1rem;
 }
 
 .sidecard p{
-  font-size: 0.8rem;
-  margin-top: 3px;
-  font-weight: 300;
+font-size: 0.8rem;
+margin-top: 3px;
+font-weight: 300;
 }
 
 .line-seperater{
-  margin-top: 20px;
-  border-bottom: 1px solid #ccc; 
-  margin-bottom: 20px;
+margin-top: 20px;
+border-bottom: 1px solid #ccc; 
+margin-bottom: 20px;
 }
 
 
+.trending_section{
+margin-top: 40px;
+}
 /* trending */
 .trending img{
-  height: 3rem;
+height: 3rem;
 }
 
 .trending{
-  margin-top: 10px;
-  width: 300px;
-  height: 330px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  border-radius: 7px;
-  padding-top: 10px;
+margin-top: 15px;
+width: 300px;
+height: 330px;
+background-color: rgb(255, 255, 255);
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+border-radius: 7px;
+padding-top: 10px;
 }
 
 .dogCard{
-  padding-left: 30px;
+padding-left: 30px;
 }
 
 .trending .dog{
-  align-items: center;
-  margin-top: 20px;
-  display: flex;
-  gap: 20px;
+align-items: center;
+margin-top: 20px;
+display: flex;
+gap: 20px;
 }
 
 .dog .disc p:last-child {
-  font-size: 0.8rem;
-  font-weight: 300;
+font-size: 0.8rem;
+font-weight: 300;
 }
