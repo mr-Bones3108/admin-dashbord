@@ -184,87 +184,79 @@ body{
 
 .main_container {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
   box-sizing: border-box;
   background-color: var(--bg-color);
-  column-gap: 50px;
-  padding-top: 20px;;
+  /* column-gap: 50px; */
+  padding: 30px 20px 40px 20px;
+  max-height: 100%;
 }
 
-.main_container .top_heading{
-  font-size: 1.2rem;
-  font-weight: 500;
-}
+
 
 /* heading section */
 
-.project_section{
-grid-column: 1/2;
-margin-left: 20px;
-}
 .announcement_section{
 grid-column: 2/3;
 margin-left: 40px;
 }
 
-/* card */
-.card_section{
-  display: grid;
-  /* grid-template-columns: 1fr 2fr; */
-  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-  column-gap: 70px;
-  row-gap: 22px;
-  padding-bottom: 60px;
+
+
+
+/* cardSection */
+.card-section{
+  margin-right: 20px;
 }
 
-.card {
-  margin-top: 20px; 
+.card-container-heading{
+  font-weight: 500;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.card-container{
   display: flex;
-  background-color: rgb(255, 255, 255);
-  width: 380px;
-  height: 233px;
-  border-radius: 10px;
-  overflow: hidden;
-  gap: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.207); 
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.line{
-  width: 6px;
-  background-color: rgb(255, 162, 0);
-}
-
-.content{
-  width: 340px;
-  margin-top: 30px;
+.card{
+  background-color: white;
+  width: 48%;
+  height: 180px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
-
-
-
-.sample_txt p{
-  width: 300px;
-  margin-top: 10px;
-  font-size: 0.8rem;
-}
-.icons{
-  margin-left: 200px;
-  display: flex;
-  justify-content: flex-start;
   margin-bottom: 20px;
-  gap: 20px;
-}
-.icons img{
-  height: 1.5rem;
-  
+  justify-content: space-between;
+  box-shadow: 0px 2px 3px rgb(175, 175, 175);
+  min-width: 270px;
+  padding: 20px 30px 20px 20px;
+  background-image: -webkit-linear-gradient(left, #fde427, #fde427 2%, transparent 2%, transparent 100%);
 }
 
-.display_card{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+.card-heading{
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.card-description{
+  font-size: 13px;
+  color: rgb(88, 88, 88);
+}
+
+.interactions{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.interactions img{
+  height: 1.5rem;
+}
+
+ul li{
+  list-style: none;
+  margin-left: 20px;
 }
 
 
