@@ -6,7 +6,7 @@
 }
 
 :root{
-    --color:#09a4e1;
+    --color:#1099fb;
     --bg-color:rgb(220, 228, 235);
 }
 body{
@@ -24,13 +24,14 @@ body{
 
   /* sidebar */
   .sidebar{
+    width: 100%;
     background-color: var(--color);
-    padding-top: 20px;
+    padding: 20px 30px 20px 20px;
     grid-row: 1/4;
   }
 
   .menu ul{
-    margin-top: 60px;
+    padding-top: 60px;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -41,9 +42,9 @@ body{
 
   .heading{
     color: white;
-    padding-left: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
 
   }
@@ -54,14 +55,13 @@ body{
 
   .menu li{
     color: white;
-    padding-left: 15px;
     display: flex;
     align-items: center;
     gap: 10px;
   }
 
   .menu li img{
-    height: 2rem;
+    width: 2rem;
   }
   .heading img{
     height: 3.6rem;
@@ -170,7 +170,7 @@ body{
 .head-button {
     color: white;
     font-weight: 500;
-    background-color: rgba(25,146,212,255);
+    background-color: var(--color);
     width: 75px;
     height: 30px;
     border-radius: 15px;
